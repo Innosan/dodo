@@ -11,7 +11,12 @@ body {
     font-family: Nunito;
     width: 1280px;
     margin: 0 auto;
-    height: 8000px;
+}
+
+html, body {
+    margin: 0;
+    width:100%;
+    padding:0;
 }
 
 header {
@@ -25,6 +30,7 @@ header {
     background: white;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 p {
@@ -35,10 +41,19 @@ p {
 
 a {
     font-family: Nunito;
+    text-decoration: none;
+    color: white;
+    
 }
 
 section {
     scroll-margin-top: 140px;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 button {
@@ -201,11 +216,12 @@ button {
     font-weight: 600;
 }
 
-.pizza-style {
+.items-style {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 1060px;
+    height: 910px;
     margin: 0 auto;
     margin-top: 70px;
 }
@@ -221,24 +237,31 @@ button {
 .item-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 250px;
     height: 370px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .item-card img {
     width: 220px;
     height: 220px;
+    margin-bottom: 5px;
     align-self: center;
 }
 
 .item-name {
     font-size: 20px;
     font-weight: 600;
+    width: 224px;
+    margin-bottom: 10px;
 }
 
 .item-desc {
+    display: flex;
+    width: 224px;
+    justify-self: flex-start;
+    flex-wrap: wrap;
     font-size: 14px;
     color: #73798C;
 }
@@ -249,24 +272,196 @@ button {
 
 .btn-and-price {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    position:absolute;
+    bottom:0;
 }
 
 .item-price {
     font-size: 16px;
     font-weight: 600;
+    padding-right: 46px;
 }
 
 .btn-add-to-cart {
     padding: 9px 29px 9px 29px;
     font-size: 16px;
     font-weight: 600;
-    margin-right: 20px;
     border-radius: 24px;
     color: #D15700;
     background-color: #FFF0E6;
     border-style: none;
+    transition: .5s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #F96900;
+    color: white;
+}
+
+#snacks .item-card {
+    height: 425px;
+}
+
+#snacks {
+    height: 1020px;
+}
+
+#desserts .item-card {
+    height: 406px;
+}
+
+#desserts {
+    height: 980px;
+}
+
+#drinks .item-card {
+    height: 387px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 134px;
+    background: #464C55;
+    bottom:0;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+}
+
+.up-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.list-foot {
+    display: flex;
+    flex-direction: column;
+    justify-self: normal;
+}
+
+.list-foot p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.list-foot ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    opacity: .7;
+    transition: .5s;
+}
+
+.list-foot ul li:hover {
+    opacity: 1;
+}
+
+.app-link {
+    margin-left: auto; 
+    margin-right: 0;
+    height: 41px;
+}
+
+.app-link a {
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 24px;
+    border-style: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 29px;
+}
+
+.number {
+    font-size: 26px;
+    margin: 0;
+}
+
+.call-us {
+    font-size: 15px;
+    opacity: .5;
+    margin: 0;
+}
+
+.mail {
+    font-size: 15px;
+    margin-top: 26px;
+}
+
+.mid-footer {
+    display: flex;
+    flex-direction: row;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 85px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mid-footer p {
+    font-size: 16px;
+    opacity: .7;
+}
+
+.income-foot {
+    margin-right: 156px;
+}
+
+.income-foot p:first-child, .pizzerias-foot p:first-child {
+    font-size: 26px;
+    opacity: 1;
+    margin-bottom: 12px;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.idk {
+    opacity: .7;
+    transition: .5s;
+}
+
+.idk a:hover {
+    opacity: 1;
+}
+
+.bottom-footer a, p {
+    font-size: 16px;
+}
+
+.bottom-footer a {
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    width: 184px;
+    justify-content: space-between;
+    align-self: center;
 }
