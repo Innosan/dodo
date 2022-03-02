@@ -47,7 +47,7 @@ a {
 }
 
 section {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 140px;
 }
 
 ul {
@@ -467,13 +467,14 @@ footer p {
 }
 
 @media screen and (max-width: 320px) {
-    
+
     html {
         scroll-behavior: smooth;
     }
 
     html, body {
         width: 320px;
+        height: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -484,6 +485,14 @@ footer p {
         margin: 12px 0 0 16px;
         padding: 0;
         position: relative;
+    }
+
+    section {
+        scroll-margin-top: 40px;
+    }
+
+    section h1 {
+        margin-left: 16px;
     }
 
     .logo {
