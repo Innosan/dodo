@@ -466,6 +466,11 @@ footer p {
     align-self: center;
 }
 
+.criple {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 320px) {
 
     html {
@@ -693,6 +698,93 @@ footer p {
 
     #pizza h1 {
         display: none;
+    }
+
+    .up-footer {
+        flex-direction: column;
+        width: 288px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    .list-foot {
+        margin-bottom: 30px;
+    }
+
+    .list-foot p {
+        margin-bottom: 12px;
+    }
+
+    .list-foot:last-child {
+        margin-bottom: 0;
+    }
+
+    .number, .call-us {
+        display: none;
+    }
+
+    .contacts-foot {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contacts {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .mail {
+        font-weight: 400;
+        opacity: .9;
+    }
+
+    .mid-footer {
+        display: none;
+    }
+
+    .app-link {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        align-self: unset;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        justify-content: unset;
+        width: 288px;
+    }
+
+    .social-links a {
+        margin-right: 6px;
+    }
+
+    .bottom-footer {
+        width: 288px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .idk {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .idk a {
+        margin-bottom: 10px;
+    }
+
+    .logo-footer .logo-text-up img:first-child {
+        content: url("../img/mobile/bott_logo/Group-1.png");
+    }
+
+    .logo-footer .logo-text-up img:last-child {
+        content: url("../img/mobile/bott_logo/Group.png");
     }
 }
 
