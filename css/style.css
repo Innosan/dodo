@@ -700,6 +700,10 @@ footer p {
         display: none;
     }
 
+    footer {
+        margin-top: 40px;
+    }
+
     .up-footer {
         flex-direction: column;
         width: 288px;
