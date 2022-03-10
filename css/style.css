@@ -773,6 +773,7 @@ footer p {
     .idk {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .idk a {
